@@ -4,4 +4,4 @@ for com1 in range(0, 10):
         if com1 == 8 and com2 == 9:
             print("{}{}".format(com1, com2))
         else:
-            print("{}{}".format(com1, com2), end= ", ")
+            print("{}{}".format(com1, com2), end=", ")
