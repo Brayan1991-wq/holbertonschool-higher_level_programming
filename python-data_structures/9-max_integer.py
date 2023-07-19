@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 def max_integer(my_list=[]):
-    # Verificar si la lista está vacía
-    if not my_list:
-        return None
-    # Inicializar la variable para almacenar el entero más grande
+    if len(my_list) == 0:
+        return (None)
     max_value = my_list[0]
-    # Iterar por la lista para encontrar el entero más grande
-    for num in my_list:
-        if num > max_value:
-            max_value = num
-            return max_value
+    for n in range(len(my_list)):
+        if my_list[n] > max_value:
+            max_value = my_list[n]
+
+    return (max_value)
