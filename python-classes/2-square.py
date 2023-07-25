@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""square class creation"""
+
+
 class Square:
+    """represent a square"""
     def __init__(self, size=0):
+        """initialize a square with value"""
+
+        """checks if size is an integer otherwise throws an exception"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
