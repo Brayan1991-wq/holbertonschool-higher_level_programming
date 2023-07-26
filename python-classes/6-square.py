@@ -48,7 +48,7 @@ class Square:
         Retorna:
             tuple: Posición del cuadrado en la impresión (x, y).
         """
-        return self.__podition
+        return self.__position
 
     @position.setter
     def position(self, value):
