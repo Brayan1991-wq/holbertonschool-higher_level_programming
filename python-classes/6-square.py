@@ -24,7 +24,7 @@ class Square:
     @size.setter
     def size(self, value):
         """
-        Setter para establecer el tamaño del cuadrado.
+        setter para establecer el tamaño del cuadrado.
 
         Parámetros:
             value (int): Tamaño del cuadrado.
@@ -32,6 +32,7 @@ class Square:
         Lanza:
             TypeError: Si el valor no es un número entero.
             ValueError: Si el valor es negativo.
+
         """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -50,7 +51,8 @@ class Square:
         return self.__podition
 
     @position.setter
-    """
+    def position(self, value):
+        """
         Setter para establecer la posición del cuadrado en la impresión.
 
         Parámetros:
@@ -59,7 +61,6 @@ class Square:
         Lanza:
             TypeError: Si el valor no es una tupla de 2 enteros positivos.
         """
-    def position(self, value):
         if not isinstance(value, tuple) or len(value) != 2 or \
            not all(isinstance(i, int) and i >= 0 for i in value):
             raise TypeError("position must be a tuple of 2 positive integers")
