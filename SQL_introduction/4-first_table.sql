@@ -1,5 +1,5 @@
--- creates a table called first_table in the current database.
+-- creates a table called first_table.
 CREATE TABLE IF NOT EXISTS first_table (
-       id int primary key,
-       name varchar(256),
+       id INT PRIMARY KEY,
+       name VARCHAR(256)
        );
